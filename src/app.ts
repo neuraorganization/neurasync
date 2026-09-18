@@ -17,12 +17,12 @@ app.state = new AppState();
 app.sftpBarItem = new StatusBarItem(
   () => {
     if (app.state.profile) {
-      return `SFTP: ${app.state.profile}`;
+      return `NeuraSync: ${app.state.profile}`;
     } else {
-      return 'SFTP';
+      return 'NeuraSync';
     }
   },
-  'SFTP@Natizyskunk',
+  'NeuraSync by Neura Organization',
   COMMAND_TOGGLE_OUTPUT
 );
 app.fsCache = LRU<string, string>({ max: 6 });

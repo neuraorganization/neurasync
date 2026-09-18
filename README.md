@@ -1,23 +1,16 @@
-# sftp sync extension for VS Code
+# NeuraSync
 
-New maintained and updated version by [@Natizyskunk](https://github.com/Natizyskunk/) 😀 <!-- and [@satiromarra](https://github.com/satiromarra) --> <br>
-(Forked from the no longer maintained [liximomo's SFTP plugin](https://github.com/liximomo/vscode-sftp.git))
+<img src="resources/icon.png" width="96" alt="NeuraSync logo">
 
-- VS Code marketplace : https://marketplace.visualstudio.com/items?itemName=Natizyskunk.sftp <br>
-- VSIX release : https://github.com/Natizyskunk/vscode-sftp/releases/
+SFTP/FTP sync extension for VS Code, part of the Neura family alongside NeuraPass and NeuraCharger.
 
-✳ I would be more than happy to have you participate in one way or another to this project. You can do so by simply following the [templates](https://github.com/Natizyskunk/vscode-sftp/issues/new/choose) when you open a new issue or a new pull request.
+Maintained by [Neura Organization](https://github.com/neuraorganization) 😀 <br>
+(Forked from [Natizyskunk's SFTP extension](https://github.com/Natizyskunk/vscode-sftp), itself a fork of [liximomo's SFTP plugin](https://github.com/liximomo/vscode-sftp.git))
 
-## ℹ INFOS - 2025/03/13
-I've tried to keep this extension up-to-date as much as I can and added a lot of new relevant features. Saddly, for the last year and a half I wasn't really able to work on the project because of personal reasons and I'm really not sure if and when I'll be able to get more time to work on it again. So for now consider the [v1.16.3](https://github.com/Natizyskunk/vscode-sftp/releases/tag/v1.16.3) as the latest official stable release available.
+- VS Code marketplace : https://marketplace.visualstudio.com/items?itemName=neuraorganization.neurasync <br>
+- VSIX release : https://github.com/neuraorganization/neurasync/releases/
 
-## ℹ INFOS - 2023/06/23
-This is the main repository for the SFTP extension since [@liximomo](https://github.com/liximomo) has set his own to deprecated in favor of this one in the VSCode marketplace.
-There are also other forks that are available. Feel free to try them.
-
-A lot of work as been brought to fix bugs, add new features and more than 50 updates have been released with a lot of improvements and stability fixes for almost two years now. 😎
-
-I've been working hard to fix a lot of things and I've updated more than 50 new releases with a lot of improvements and stability fixes and I've brought new features for almost three years now. 
+✳ We would be more than happy to have you participate in one way or another to this project. You can do so by simply following the [templates](https://github.com/neuraorganization/neurasync/issues/new/choose) when you open a new issue or a new pull request.
 
 ---
 
@@ -33,7 +26,7 @@ VSCode-SFTP enables you to add, edit or delete files within a local directory an
   - Multiple configurations
   - Switchable profiles
   - Temp File support
-- [Commands](https://github.com/Natizyskunk/vscode-sftp/wiki/Commands)
+- [Commands](https://github.com/neuraorganization/neurasync/wiki/Commands)
 - [Debug](#debug)
 - [FAQ](#FAQ)
 
@@ -42,7 +35,7 @@ VSCode-SFTP enables you to add, edit or delete files within a local directory an
 ### Method 1 (Recommended : Auto update)
 1. Select Extensions (Ctrl + Shift + X).
 2. Uninstall current sftp extension from @liximomo.
-3. Install new extension directly from VS Code Marketplace : https://marketplace.visualstudio.com/items?itemName=Natizyskunk.sftp.
+3. Install new extension directly from VS Code Marketplace : https://marketplace.visualstudio.com/items?itemName=neuraorganization.neurasync.
 4. Voilà!
 
 ### Method 2 (Manual update)
@@ -55,12 +48,12 @@ To install just follow these steps from within VSCode:
 6. Voilà!
 
 ## Documentation
-- [Home](https://github.com/Natizyskunk/vscode-sftp/wiki)
-- [Settings](https://github.com/Natizyskunk/vscode-sftp/wiki/Setting)
-- [Common configuration](https://github.com/Natizyskunk/vscode-sftp/wiki/Common-Configuration)
-- [SFTP configuration](https://github.com/Natizyskunk/vscode-sftp/wiki/SFTP-only-Configuration)
-- [FTP confriguration](https://github.com/Natizyskunk/vscode-sftp/wiki/FTP(s)-only-Configuration)
-- [Commands](https://github.com/Natizyskunk/vscode-sftp/wiki/Commands)
+- [Home](https://github.com/neuraorganization/neurasync/wiki)
+- [Settings](https://github.com/neuraorganization/neurasync/wiki/Setting)
+- [Common configuration](https://github.com/neuraorganization/neurasync/wiki/Common-Configuration)
+- [SFTP configuration](https://github.com/neuraorganization/neurasync/wiki/SFTP-only-Configuration)
+- [FTP confriguration](https://github.com/neuraorganization/neurasync/wiki/FTP(s)-only-Configuration)
+- [Commands](https://github.com/neuraorganization/neurasync/wiki/Commands)
 
 ## Usage
 If the latest files are already on a remote server, you can start with an empty local folder,
@@ -95,10 +88,10 @@ _Note：_ backslashes and other special characters must be escaped with a backsl
 8. Done - you can now edit locally and after each save it will upload to sync your remote file with the local copy.
 9. Enjoy!
 
-For detailed explanations please go to [wiki](https://github.com/Natizyskunk/vscode-sftp/wiki).
+For detailed explanations please go to [wiki](https://github.com/neuraorganization/neurasync/wiki).
 
 ## Example configurations
-You can see the full list of configuration options [here](https://github.com/Natizyskunk/vscode-sftp/wiki/configuration).
+You can see the full list of configuration options [here](https://github.com/neuraorganization/neurasync/wiki/configuration).
 
 - [sftp sync extension for VS Code](#sftp-sync-extension-for-vs-code)
   - [Installation](#installation)
@@ -276,7 +269,7 @@ In sftp.json:
 ```
 
 ## Remote Explorer
-![remote-explorer-preview](https://raw.githubusercontent.com/Natizyskunk/vscode-sftp/master/assets/showcase/remote-explorer.png)
+![remote-explorer-preview](https://raw.githubusercontent.com/neuraorganization/neurasync/master/assets/showcase/remote-explorer.png)
 
 Remote Explorer lets you explore files in remote. You can open Remote Explorer by:
 
@@ -311,14 +304,3 @@ In sftp.json:
 
 ## FAQ
 You can see all the Frequently Asked Questions [here](./FAQ.md).
-
-## Donation
-If this project helped you reduce development time and you wish to contribute financially
-
-### Buy Me a Coffee
-[![Buy Me A Coffee](https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/custom_images/orange_img.png)](https://www.buymeacoffee.com/Natizyskunk)
-
-### PayPal
-<!-- [![PayPal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BY89QD47D7MPS&source=url) -->
-[![PayPal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/donate?business=DELD7APHHM3BC&no_recurring=0&currency_code=EUR)
-[![PayPal Me](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/natanfourie)
