@@ -301,8 +301,9 @@ export default class SSHClient extends RemoteClient {
         .on('error', err => {
           reject(new Error(`[${option.host}]: ${err.message}`));
         })
-        .on('close', this.end())
-        .on('end', this.end())
+        // server-side disconnect: tear down this client and any hops
+        .on('close', () => this.end())
+        .on('end', () => this.end())
         .connect({
           keepaliveInterval: 1000 * 30, // 30 secs, original
           // keepaliveInterval: 1000 * 600, // 10 mins
@@ -358,7 +359,8 @@ export default class SSHClient extends RemoteClient {
 
     if (this.hoppingClients) {
       // last connect first end
-      this.hoppingClients.reverse().forEach(client => client.end());
+      // copy first: end() can run more than once, and reverse() mutates
+      this.hoppingClients.slice().reverse().forEach(client => client.end());
     }
   }
 

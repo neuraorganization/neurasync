@@ -1,7 +1,7 @@
 /**
  * Render the NeuraSync mark: the extension icon (PNG) and the activity-bar icon (SVG).
  *
- *   node scripts/make-icon.mjs
+ *   node ci-cd/make-icon.mjs
  *
  * Same family as the NeuraPass and NeuraCharger marks: white nodes joined by a
  * translucent line on a near-black rounded tile. Here the line is two arcs of a

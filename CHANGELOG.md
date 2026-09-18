@@ -1,4 +1,9 @@
 ## Unreleased
+* Fix : SFTP connections failing with `The "listener" argument must be of type function. Received undefined`. The server-disconnect handlers were passed the result of `end()` instead of a function.
+* Tests : the Jest transformer works again on Jest 28+.
+* Build : `ci-cd/build.sh` and `ci-cd/publish.sh` for packaging and publishing releases.
+
+## 1.16.4 - 2026-09-18
 * Fix : `TypeError: isDate is not a function` on upload/download with recent VS Code versions (Node 23+ removed `util.isDate`). Updated `ssh2` to v1.17.0.
 * Rebrand : Renamed to NeuraSync with a new icon, now maintained by [Neura Organization](https://github.com/neuraorganization/neurasync). Existing `.vscode/sftp.json` configs and `sftp.*` settings keep working unchanged.
 
