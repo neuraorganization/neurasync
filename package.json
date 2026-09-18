@@ -2,7 +2,7 @@
   "name": "neurasync",
   "displayName": "NeuraSync - SFTP/FTP",
   "description": "Sync, upload and download files over SFTP/FTP from VS Code",
-  "version": "1.16.3",
+  "version": "1.16.4",
   "publisher": "neuraorganization",
   "author": "Neura Organization <neuraorganization@gmail.com> (https://github.com/neuraorganization)",
   "engines": {
